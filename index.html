@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodIe</title>
+    <!-- Bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap 5 icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- main css style -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="./Css/responsive.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- هدر سایت -->
+    <header class=" w-100 container-fluid">
+
+        <nav class="col-12 navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5" href="#">FoodIe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Other options
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <!-- Button trigger Login modal -->
+                        <button class="btn text-danger" type="button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-1" id="login-btn">Login</button>
+                        <!-- Login Modal -->
+                        <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-body">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-4" id="exampleModalLabel">Login</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Username:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Password:</label>
+                                                <input type="password" id="inputPassword5" class="form-control"
+                                                    aria-describedby="passwordHelpBlock">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Enter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger Sign Up modal -->
+                        <button class="btn btn-outline-danger boarder rounded-pill mx-3" type="button"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-2" id="login-btn">Sign up</button>
+                        <!--Sign Up Modal -->
+                        <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-body">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-4" id="exampleModalLabel">Sign Up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Enter
+                                                    Username:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Enter
+                                                    Your Email:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Enter Password:</label>
+                                                <input type="password" id="inputPassword5" class="form-control"
+                                                    aria-describedby="passwordHelpBlock">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Create Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- قسمت دوم هدر سایت شامل عکس و دکمه سفارش -->
+        <div class="row">
+            <div class="col-12 col-sm-8" id="introduction-part-1">
+                <div class="row mt-4" id="part-1">
+                    <div class="col-12">
+                        <h1 class="text-danger" id="head-1">All Fast Food is <br> Available at FoodIe</h1>
+                    </div>
+                    <div class="col-8 d-flex justify-content-between mt-3">
+                        <img src="./images/man.jpg" class="img-fluid object-fit-cover me-3 header-pic" id="profile-pic"
+                            alt="profile-pic">
+                        <h6 class="text-dark-emphasis" id="text">We Are Just A Click Away When You Crave For Delicious
+                            Fast Food</h6>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button class="btn btn-outline-danger boarder rounded-pill buy-btn me-3" type="button"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy
+                            Now</button>
+
+                        <div class="modal modal-lg fade" id="exampleModal-3" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-body">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-4" id="exampleModalLabel">Login</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <div class="col-6">
+                                                    <select class="form-select" id="choosen-food"
+                                                        aria-label="Default select example">
+                                                        <option selected>Choose Your Favorite</option>
+                                                        <option>Chicken Burgur</option>
+                                                        <option>Chicken Pizza</option>
+                                                        <option>Chicken Fry</option>
+                                                        <option>Grill Sandwich</option>
+                                                        <option>Tacco Traifi</option>
+                                                        <option>Noddle's Ramen</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-select" aria-label="Default select example"
+                                                        id="food-number">
+                                                        <option selected>Number</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 ms-5" id="show-container">
+                                                    <button type="button" class="btn btn-danger show-price-btn">Show Price</button>
+                                                </div>
+
+                                                <div class="col-12  border rounded price-container w-75">
+                                                    <p class="fs-4 mt-1 text-center">Total Price : <span id="price"></span></p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-danger" id="order">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline-danger boarder rounded-pill buy-btn" type="button"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-4">How To
+                            Order</button>
+
+                        <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">How To Order</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>You should click on the <span class="text-danger"> Buy Now</span> button and
+                                            order some food.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4" id="introduction-part-2">
+                <img src="./images/pizza-menu.webp" class="img-fluid w-75 h-75 ms-0 mt-5 object-fit-cover header-pic"
+                    alt="Ommelette pic">
+            </div>
+        </div>
+    </header>
+
+    <!-- سکشن اول سایت شامل دو بخش که بخش دوم دارای کارت خرید است -->
+    <section class="position-relative bg-body" id="section-1">
+
+        <div class="row w-75 position-absolute start-50 translate-middle bg-body shadow m-auto mt-5" id="card-1">
+            <div class="col-sm-4 my-3">
+                <div class="card border border-white">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-filter-square bg-warning rounded svg-1" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                            d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                    </svg>
+
+                    <div class="card-body card-body-1">
+                        <h5 class="card-title headers">Fast delivery</h5>
+                        <p class="card-text text-dark-emphasis card-text-1">The Food Will Be Deliverd To Your Home
+                            Within 1-2 Hours Of Your
+                            Ordering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 my-3">
+                <div class="card border border-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-arrow-clockwise bg-warning rounded svg-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" />
+                    </svg>
+                    <div class="card-body card-body-1">
+                        <h5 class="card-title headers">Fresh Food</h5>
+                        <p class="card-text text-dark-emphasis card-text-1">Your Food Will Be Deliverd 100% Fresh To
+                            Your Home. We Do Not Deliver
+                            Stale Food.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 my-3">
+                <div class="card h-100 border border-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-wallet bg-warning rounded svg-1" viewBox="0 0 16 16">
+                        <path
+                            d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a2 2 0 0 1-1-.268M1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1" />
+                    </svg>
+                    <div class="card-body card-body-1">
+                        <h5 class="card-title headers">Free Delivery</h5>
+                        <p class="card-text text-dark-emphasis card-text-1">Your Food Delivery I Absolutely Free. No
+                            Cost Just Order And Enjoy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسمت کارت های خرید (شامل سه کارت) -->
+        <div class="row container-fluid d-flex justify-content-center align-items-center" id="main-category-container">
+            <div class="row col-12 container-fluid" id="category-header">
+                <div class="col-xl-7 col-sm-12 row h-50 ms-3">
+                    <div class="col-12 h-50" id="delivery-text-container">
+                        <h2 class="fw-bold" id="deliverd-header">Best <span class="text-danger">Delivered </span>
+                            Category</h2>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-sm-12 row h-50 ms-0 responsive-header-container">
+                    <div class="col-12 h-100 w-75" id="explain-text-container">
+                        <h6 class="text-dark-emphasis responsive-header">Here Are Some Of Our best Distributed <br>
+                            Categories.
+                            If You want You Can Order <br> From Here.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row container-fluid" id="category-body">
+                <div class="col-4 container-fluid responsive-cards responsive-cards-1">
+                    <div class="card mt-3 pb-3">
+                        <img src="./images/Chicken-burgur.jpg" class="card-img-top object-fit-cover" alt="...">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">Chicken Burger</h5>
+                            <a href="#" class="card-link text-decoration-none ms-3 text-danger" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Order Now ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 container-fluid responsive-cards">
+                    <div class="card mt-3 pb-3">
+                        <img src="./images/Pizza.jpg" class="card-img-top object-fit-cover" alt="...">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">Chicken Pizza</h5>
+                            <a href="#" class="card-link text-decoration-none ms-3 text-danger" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Order Now ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 container-fluid responsive-cards responsive-cards-1">
+                    <div class="card mt-3 pb-3">
+                        <img src="./images/French-Fries.jpg" class="card-img-top object-fit-cover responsive-img"
+                            id="img-1" alt="...">
+                        <div class="card-body mx-auto">
+                            <h5 class="card-title">French Fries</h5>
+                            <a href="#" class="card-link text-decoration-none ms-3 text-danger" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Order Now ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سکشن دوم سایت که شامل منوی سایت است و شامل 6 کارت خرید است -->
+    <section class="section-2 bg-body">
+        <div class="mx-auto pt-5" id="regular-menu-1">
+            <h2 class="fw-bold" id="regular-menu-header">Our <span class="text-danger">Regular</span> Menu</h2>
+            <div class="h-50 d-flex justify-content-between align-items-center regular-menu-box">
+                <p class="text-dark-emphasis">These Are Our Regular Menus. You Can <br> Order Anything You Like.</p>
+                <button type="button" class="btn btn-danger seeAll-btn">See All</button>
+            </div>
+        </div>
+
+
+        <div class="row card-group mx-auto d-flex justify-content-center" id="regular-menu-cards-container">
+            <div class="row col-12 w-100 regular-menu-cards-containers-1" id="menu-cards-container-1">
+                <div class="col-3 position-relative card food-card">
+                    <img src="./images/Chicken-pizza.jpg"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Chicken Burgur</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(160)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$3.50</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card position-relative food-card">
+                    <img src="./images/Chicken-burgur-2.jpg"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Chicken Pizza</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(142)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$4.20</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-3 card position-relative food-card">
+                    <img src="./images/Chicken-fry.jpg"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Chicken Fry</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(123)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$5.00</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-12 w-100 regular-menu-cards-containers-1" id="menu-cards-container-2">
+                <div class="col-3 card position-relative food-card">
+                    <img src="./images/grill-sandwich.webp"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Grill Sandwich</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(112)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$4.80</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card position-relative food-card">
+                    <img src="./images/Tacoo-traifi.jpg"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Tacco Traifi</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(152)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$3.63</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 card position-relative food-card">
+                    <img src="./images/Noddle-Ramen.jpeg"
+                        class="card-img-top position-absolute top-0 start-100 translate-middle image-items" alt="...">
+                    <div class="card-body card-body-2 mt-4">
+                        <h4 class="card-title fw-bold">Noddle's Ramen</h4>
+                        <div class="card-body d-flex justify-content-start mt-2 rate-container">
+                            <img src="./images/five-star-ratings.png" class="img-fluid rate-img" alt="Noddle pic">
+                            <h6 class="text-dark-emphasis ms-2 mt-2">(163)</h6>
+                        </div>
+                        <div class="card-body d-flex justify-content-between ps-1">
+                            <h5 class="card-title mt-1">$6.50</h5>
+                            <button class="btn btn-danger me-3 seeAll-btn card-link" type="button"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- این بخش درای عکس هایی برای تخفیف است -->
+    <article class="container-fluid" id="article-1">
+        <div class="row container-fluid" id="main-discount-container">
+            <div class="col-7 container-fluid card mt-3 discount-containers" id="discount-container-1">
+                <img src="./images/Cheese-burgur.webp" class="card-img w-100 h-100 object-fit-cover" id="card-image-1"
+                    alt="...">
+                <div class="card-img-overlay bg-danger" id="margin-setting">
+                    <p class="card-title text-white discount-text">30% Discount</p>
+                </div>
+            </div>
+
+            <div class="col-5 container-fluid card mt-3 discount-containers" id="discount-container-2">
+                <div class="col-12">
+                    <div class="col-12 card card-images">
+                        <img src="./images/desert.jpg" class="card-img w-100 card-image-2 object-fit-cover"
+                            id="card-border" alt="...">
+                        <div class="card-img-overlay bg-danger">
+                            <p class="card-title text-white discount-text">25% Discount</p>
+                        </div>
+                    </div>
+                    <div class="col-12 card card-images">
+                        <img src="./images/tortilla-wrap-tacos.jpg" class="card-img w-100 card-image-2 object-fit-cover"
+                            alt="...">
+                        <div class="card-img-overlay bg-danger">
+                            <p class="card-title text-white discount-text">20% Discount</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- فوتر سایت -->
+    <footer class="container-fluid mt-5">
+        <div class="row main-footer-container">
+            <div class="col-md-4 col-sm-6 lists mt-4" id="footer-list-1">
+                <div class="first-column" id="first-column-1">
+                    <h5 class="fw-bold text-danger">Fooodish</h5>
+                    <p class="text-dark-emphasis">Continue Foodish 2023 all rights reserved</p>
+                </div>
+                <div class=" first-column" id="first-column-2">
+                    <h5 class="fw-bold text-danger" id="follow-us">Follow Us On</h5>
+                    <a href="#"><i class="bi bi-pinterest text-secondary"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-secondary"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x text-secondary"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-secondary"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-3 lists mt-4" id="footer-list-2">
+                <h5 class="fw-bold ms-4 text-danger">Menu</h5>
+
+                <ul>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Home</a>
+                    </li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Offers</a>
+                    </li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Services</a>
+                    </li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3 lists mt-4" id="footer-list-3">
+                <h5 class="fw-bold text-center ms-2 text-danger">Information</h5>
+
+                <ul class="text-center">
+                    <li class="list-items mb-1 space-1"><a href="#"
+                            class="text-decoration-none text-dark-emphasis">Home</a></li>
+                    <li class="list-items mb-1 space-2"><a href="#"
+                            class="text-decoration-none text-dark-emphasis">Quality</a></li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Make a
+                            Choice</a></li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Salad with
+                            Vegetable</a></li>
+                    <li class="list-items mb-1"><a href="#" class="text-decoration-none text-dark-emphasis">Fast
+                            Delivery</a></li>
+                    <li class="list-items mb-1"><a href="#"
+                            class="text-decoration-none text-dark-emphasis">Subscribe</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-4 lists mt-4" id="footer-list-4">
+                <h5 class="fw-bold text-center text-danger">Contact</h5>
+
+                <ul class="text-center">
+                    <li class="list-items mb-2 overflow-texts"><a href="#"
+                            class="text-decoration-none text-dark-emphasis">+123 456 789</a></li>
+                    <li class="list-items mb-2"><a href="#" class="text-decoration-none text-dark-emphasis">Explore</a>
+                    </li>
+                    <li class="list-items mb-2"><a href="#"
+                            class="text-decoration-none text-dark-emphasis">Info@Foodish.Com</a></li>
+                    <li class="list-items mb-2 text-dark-emphasis">1245, New York, USA</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- اسکریپت بوت استرپ 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- اسکریپت برای سبد خرید -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
