@@ -1,13 +1,13 @@
 export const Footer = () => {
   return (
     <footer className="container-fluid mt-5">
-        <div className="row main-footer-container">
+        <div className="row w-full h-full bg-amber-100">
             <div className="col-md-4 col-sm-6 lists mt-4" id="footer-list-1">
-                <div className="first-column" id="first-column-1">
+                <div className="ml-[5.5em]" id="first-column-1">
                     <h5 className="fw-bold text-danger">Fooodish</h5>
                     <p className="text-dark-emphasis">Continue Foodish 2023 all rights reserved</p>
                 </div>
-                <div className=" first-column" id="first-column-2">
+                <div className="ml-[5.5em] mt-[2rem]">
                     <h5 className="fw-bold text-danger" id="follow-us">Follow Us On</h5>
                     <a href="#"><i className="bi bi-pinterest text-secondary"></i></a>
                     <a href="#"><i className="bi bi-instagram text-secondary"></i></a>
@@ -20,13 +20,13 @@ export const Footer = () => {
                 <h5 className="fw-bold ms-4 text-danger">Menu</h5>
 
                 <ul>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Home</a>
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Home</a>
                     </li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Offers</a>
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Offers</a>
                     </li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Services</a>
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Services</a>
                     </li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">About Us</a>
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -35,17 +35,17 @@ export const Footer = () => {
                 <h5 className="fw-bold text-center ms-2 text-danger">Information</h5>
 
                 <ul className="text-center">
-                    <li className="list-items mb-1 space-1"><a href="#"
+                    <li className="list-none mb-1 mr-[3.9em]"><a href="#"
                             className="text-decoration-none text-dark-emphasis">Home</a></li>
-                    <li className="list-items mb-1 space-2"><a href="#"
+                    <li className="list-none mb-1 mr-[3.5em]"><a href="#"
                             className="text-decoration-none text-dark-emphasis">Quality</a></li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Make a
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Make a
                             Choice</a></li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Salad with
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Salad with
                             Vegetable</a></li>
-                    <li className="list-items mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Fast
+                    <li className="list-none mb-1"><a href="#" className="text-decoration-none text-dark-emphasis">Fast
                             Delivery</a></li>
-                    <li className="list-items mb-1"><a href="#"
+                    <li className="list-none mb-1"><a href="#"
                             className="text-decoration-none text-dark-emphasis">Subscribe</a></li>
                 </ul>
             </div>
@@ -54,13 +54,13 @@ export const Footer = () => {
                 <h5 className="fw-bold text-center text-danger">Contact</h5>
 
                 <ul className="text-center">
-                    <li className="list-items mb-2 overflow-texts"><a href="#"
+                    <li className="list-none mb-2 overflow-texts"><a href="#"
                             className="text-decoration-none text-dark-emphasis">+123 456 789</a></li>
-                    <li className="list-items mb-2"><a href="#" className="text-decoration-none text-dark-emphasis">Explore</a>
+                    <li className="list-none mb-2"><a href="#" className="text-decoration-none text-dark-emphasis">Explore</a>
                     </li>
-                    <li className="list-items mb-2"><a href="#"
+                    <li className="list-none mb-2"><a href="#"
                             className="text-decoration-none text-dark-emphasis">Info@Foodish.Com</a></li>
-                    <li className="list-items mb-2 text-dark-emphasis">1245, New York, USA</li>
+                    <li className="list-none mb-2 text-dark-emphasis">1245, New York, USA</li>
                 </ul>
             </div>
 
