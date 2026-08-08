@@ -1,75 +1,93 @@
-# React + TypeScript + Vite
+🍔 Foodie
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Foodie is a frontend restaurant website for a fast-food business, built as a personal portfolio project.
 
-Currently, two official plugins are available:
+The project was originally created as one of my early frontend projects using HTML, CSS, and Bootstrap. After gaining more experience and revisiting the project about a year or two later, I decided to rebuild it from scratch using a more modern frontend stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The current version is being refactored and rebuilt with React, TypeScript, and Tailwind CSS v4, with a focus on writing cleaner, more reusable, and maintainable frontend code.
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Currently implemented:
 
-## Expanding the ESLint configuration
+- Browse food items
+- Browse food categories
+- Search for food
+- Add food items to the cart
+- Responsive design (currently being rebuilt with Tailwind CSS)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+More features such as food details, cart management, checkout, and authentication will be added as the project evolves.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- Tailwind CSS v4
+- Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+📁 Project Structure
 
-```
+src/
+├── components/
+├── assets/
+├── App.tsx
+└── main.tsx
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The project is currently a single-page frontend application, so React Router is not used at this stage.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔄 Why I Rebuilt This Project
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Foodie is not a completely new project.
 
-```
+It started as one of my first frontend projects when I was learning web development. At that time, I built it with HTML, CSS, and Bootstrap.
+
+After gaining more experience with modern frontend development, I came back to the project and decided to rebuild it rather than simply creating another small project from scratch.
+
+This gave me an opportunity to:
+
+- Revisit an older project with a different level of experience
+- Improve the component structure
+- Practice React-based development
+- Introduce TypeScript into the project
+- Replace traditional CSS with Tailwind CSS
+- Improve code maintainability and reusability
+- Rebuild responsive layouts using a modern utility-first approach
+- Gradually turn a static project into a more dynamic application
+
+The project is still a work in progress, and I plan to continue improving it as I learn and apply new frontend concepts.
+
+🚧 Planned Features
+
+The following features are planned for future development:
+
+- Food details
+- Increase/decrease item quantity in the cart
+- Remove items from the cart
+- Checkout flow
+- Login and registration
+
+🚀 Getting Started
+
+Clone the repository:
+
+git clone <repository-url>
+
+Navigate to the project directory:
+
+cd foodie
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+The application will then be available on the local development server provided by Vite.
+
+👩🏻‍💻 Author
+
+Saba Shirazi
+
+This project is publicly available on GitHub as part of my frontend development portfolio.
