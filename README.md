@@ -2,7 +2,7 @@
 
 Foodie is a frontend restaurant website for a fast-food business, built as a personal portfolio project.
 
-The project was originally created as one of my early frontend projects using HTML, CSS, and Bootstrap. After gaining more experience and revisiting the project about a year or two later, I decided to rebuild it from scratch using a more modern frontend stack.
+The project was originally created as one of my early frontend projects using HTML, CSS, and Bootstrap 5. After gaining more experience and revisiting the project about a year or two later, I decided to rebuild it from scratch using a more modern frontend stack.
 
 The current version is being refactored and rebuilt with React, TypeScript, and Tailwind CSS v4, with a focus on writing cleaner, more reusable, and maintainable frontend code.
 
@@ -39,7 +39,8 @@ The project is currently a single-page frontend application, so React Router is 
 
 Foodie is not a completely new project.
 
-It started as one of my first frontend projects when I was learning web development. At that time, I built it with HTML, CSS, and Bootstrap.
+It started as one of my first frontend projects when I was learning web development. At that time, I built it with HTML, CSS, 
+and Bootstrap 5.
 
 After gaining more experience with modern frontend development, I came back to the project and decided to rebuild it rather than simply creating another small project from scratch.
 
@@ -70,19 +71,27 @@ The following features are planned for future development:
 
 Clone the repository:
 
-git clone <repository-url>
+```
+git clone https://github.com/saba-sh80/FoodIe
+```
 
 Navigate to the project directory:
 
-cd foodie
+```
+cd Foodie
+```
 
 Install dependencies:
 
+```
 npm install
+```
 
 Start the development server:
 
+```
 npm run dev
+```
 
 The application will then be available on the local development server provided by Vite.
 
