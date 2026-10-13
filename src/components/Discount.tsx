@@ -1,53 +1,43 @@
 export const Discount = () => {
   return (
-    <article className="container-fluid w-[85em] h-[25em]">
-      <div className="row container-fluid w-[72em] h-[25em] ml-[5em]">
-        <div
-          className="col-7 container-fluid card mt-3 h-[23em] border-none"
-          id="discount-container-1"
-        >
+    <div className="w-full h-113 flex justify-center items-center">
+      <div className="w-270 h-93 grid grid-rows-1 grid-cols-6">
+        <div className="h-full col-span-4 relative border-none">
           <img
-            src="./images/Cheese-burgur.webp"
-            className="card-img w-100 object-cover h-[22.6em]"
+            src="../../assets/images/Cheese-burgur.webp"
+            className="w-160 object-cover h-93 rounded-md"
             alt="..."
           />
-          <div className="rounded-br-[25px] rounded-tr-none w-[8.5em] h-[2.5em] bg-red-600 ml-[0.775em]">
-            <p className="card-title text-white mt-[-0.5em]">30% Discount</p>
+          <div className="flex justify-center items-center absolute top-0 left-0 rounded-br-[25px] rounded-tr-none rounded-tl-md w-[8.5em] h-[2.5em] bg-red-700">
+            <p className="text-white">30% Discount</p>
           </div>
         </div>
 
-        <div
-          className="col-5 container-fluid card mt-3 h-[23em] border-none"
-          id="discount-container-2"
-        >
-          <div className="col-12">
-            <div className="col-12 card border-none">
+        <div className="col-span-2 h-full" id="discount-container-2">
+          <div>
+            <div className="relative">
               <img
-                src="./images/desert.jpg"
-                className="card-img w-100 h-[11em] object-cover mb-[1em]"
+                src="../../assets/images/desert.jpg"
+                className="w-112.5 h-44 object-cover mb-[1em] rounded-md"
                 alt="..."
               />
-              <div className="rounded-br-[25px] rounded-tr-none w-[8.5em] h-[2.5em] bg-red-600">
-                <p className="card-title text-white mt-[-0.5em]">
-                  25% Discount
-                </p>
+              <div className="flex justify-center items-center absolute top-0 left-0 rounded-br-[25px] rounded-tr-none rounded-tl-md w-[8.5em] h-[2.5em] bg-red-700">
+                <p className="card-title text-white">25% Discount</p>
               </div>
             </div>
-            <div className="col-12 card border-none">
+            <div className="relative">
               <img
-                src="./images/tortilla-wrap-tacos.jpg"
-                className="card-img w-100 h-[11em] object-cover"
+                src="../../assets/images/tortilla-wrap-tacos.jpg"
+                className="card-img w-112.5 h-45 object-cover rounded-md"
                 alt="..."
               />
-              <div className="rounded-br-[25px] rounded-tr-none w-[8.5em] h-[2.5em] bg-red-600">
-                <p className="card-title text-white mt-[-0.5em]">
-                  20% Discount
-                </p>
+              <div className="flex justify-center items-center absolute top-0 left-0 rounded-br-[25px] rounded-tr-none rounded-tl-md w-[8.5em] h-[2.5em] bg-red-700">
+                <p className="card-title text-white">20% Discount</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 };

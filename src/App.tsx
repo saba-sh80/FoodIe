@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Header />
-      <Menu />
       <ShopCards />
+      <Menu />
       <Discount />
       <Footer />
     </div>

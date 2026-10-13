@@ -1,28 +1,26 @@
 @import "tailwindcss";
 
-
 /* #card-1{
     top: -1.9em;
     border-radius: 1em;
 } */
-
-
-footer{
-    width: 85em;
-    height: 15em;
-    background-color: rgb(247, 234, 200);
+.menu-background {
+  background-color: rgb(247, 234, 200);
 }
 
-
-span{
-    width: 35px;
-    height: 35px;
+footer {
+  width: 85em;
+  height: 15em;
+  background-color: rgb(247, 234, 200);
 }
 
-i{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+span {
+  width: 35px;
+  height: 35px;
 }
 
-
+i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
