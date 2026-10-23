@@ -6,7 +6,9 @@ The project was originally created as one of my early frontend projects using HT
 
 The current version is being refactored and rebuilt with React, TypeScript, and Tailwind CSS v4, with a focus on writing cleaner, more reusable, and maintainable frontend code.
 
-✨ Features
+---
+
+## ✨ Features
 
 Currently implemented:
 
@@ -18,14 +20,18 @@ Currently implemented:
 
 More features such as food details, cart management, checkout, and authentication will be added as the project evolves.
 
-🛠️ Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 - React
 - TypeScript
 - Tailwind CSS v4
 - Vite
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
 
 src/
 ├── components/
@@ -35,7 +41,9 @@ src/
 
 The project is currently a single-page frontend application, so React Router is not used at this stage.
 
-🔄 Why I Rebuilt This Project
+---
+
+## 🔄 Why I Rebuilt This Project
 
 Foodie is not a completely new project.
 
@@ -43,6 +51,8 @@ It started as one of my first frontend projects when I was learning web developm
 and Bootstrap 5.
 
 After gaining more experience with modern frontend development, I came back to the project and decided to rebuild it rather than simply creating another small project from scratch.
+
+---
 
 This gave me an opportunity to:
 
@@ -57,7 +67,9 @@ This gave me an opportunity to:
 
 The project is still a work in progress, and I plan to continue improving it as I learn and apply new frontend concepts.
 
-🚧 Planned Features
+---
+
+### 🚧 Planned Features
 
 The following features are planned for future development:
 
@@ -67,7 +79,9 @@ The following features are planned for future development:
 - Checkout flow
 - Login and registration
 
-🚀 Getting Started
+---
+
+## 🚀 Getting Started
 
 Clone the repository:
 
@@ -95,7 +109,9 @@ npm run dev
 
 The application will then be available on the local development server provided by Vite.
 
-👩🏻‍💻 Author
+---
+
+### 👩🏻‍💻 Author
 
 Saba Shirazi
 
