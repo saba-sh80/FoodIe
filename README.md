@@ -1,4 +1,4 @@
-🍔 Foodie
+# 🍔 Foodie
 
 Foodie is a frontend restaurant website for a fast-food business, built as a personal portfolio project.
 
