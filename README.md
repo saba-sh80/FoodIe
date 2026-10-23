@@ -52,9 +52,7 @@ and Bootstrap 5.
 
 After gaining more experience with modern frontend development, I came back to the project and decided to rebuild it rather than simply creating another small project from scratch.
 
----
-
-This gave me an opportunity to:
+**This gave me an opportunity to:
 
 - Revisit an older project with a different level of experience
 - Improve the component structure
