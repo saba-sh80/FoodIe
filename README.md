@@ -33,11 +33,13 @@ More features such as food details, cart management, checkout, and authenticatio
 
 ## 📁 Project Structure
 
+```
 src/
 ├── components/
 ├── assets/
 ├── App.tsx
 └── main.tsx
+```
 
 The project is currently a single-page frontend application, so React Router is not used at this stage.
 
